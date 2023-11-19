@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #202024 !important;
+}
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+/* header */
+.header {
+  background-color: #121214;
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+.t-botn {
+  border: none;
+  background-color: #b4fc56;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.t-botn:hover {
+  background-color: #92f80c;
+}
+/* balance and income and expense */
+.box {
+  padding: 30px 50px;
+  background-color: #202024;
+  border-radius: 10px;
+  color: #ccc;
+  box-shadow: 0 0 5px black;
+  display: flex;
+  justify-content: space-between;
+}
+.balance {
+  padding: 30px 50px;
+  background-color: #b4fc56;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.parent {
+  top: -80px;
+  left: 15%;
+}
+/* form style */
+.form-parent {
+  position: relative;
+}
+.form-child {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 5;
+  background-color: #202024;
+}
+.form-control {
+  background-color: #121214 !important;
+  border: none !important;
+  padding: 20px 0 0;
+  color: #ccc !important;
+  margin-bottom: 40px !important;
+}
+
+.form-control #floatingTextarea2 {
+  margin-bottom: 0px !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+.form-floating label {
+  background-color: transparent !important;
+  color: #ccc !important;
+}
+.form-floating label::after {
+  background-color: transparent !important;
+}
+.form-floating > .form-control:focus ~ label::after {
+  background-color: transparent !important;
+}
+.form-floating > .form-control:focus ~ label {
+  color: white !important;
+}
+.form-floating > label {
+  top: -20px;
+}
+.add-botn {
+  background-color: #b4fc56;
+  border: none;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.h-f {
+  display: flex;
+  justify-content: space-between;
+}
+/* Transaction list */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #121214;
+  margin-bottom: 10px;
+}
+li {
+  color: #ccc;
+}
